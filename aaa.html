@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            background: #eee;
+            padding: 0;
+            margin: 0;
+        }
+        #wrapper{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        @keyframes XXX {
+            from{
+                transform: rotate(0deg)
+            }
+            to{
+                transform: rotate(360deg)
+            }
+        }
+        #bagua{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            animation: XXX 10s infinite linear;
+        }
+        #bagua > :first-child{
+            background: black;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+        }
+        #bagua > :nth-child(2){
+            background: white;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+        }
+        #bagua > :nth-child(3){
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            left: 25%;
+            border-radius: 50%;
+            background: black;
+        }
+        #bagua > :nth-child(4){
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            border-radius: 50%;
+            background: white;
+        }
+        #bagua > :nth-child(5){
+            width: 15%;
+            height: 15%;
+            position: absolute;
+            left: 45%;
+            top: 17%;
+            border-radius: 50%;
+            background: white;
+        }
+        #bagua > :nth-child(6){
+            width: 15%;
+            height: 15%;
+            position: absolute;
+            left: 40%;
+            top: 67%;
+            border-radius: 50%;
+            background: black;
+        }
+        #wrapper > :nth-child(2){
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="bagua">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>太极八卦图</div>
+    </div>
+</body>
+</html>
